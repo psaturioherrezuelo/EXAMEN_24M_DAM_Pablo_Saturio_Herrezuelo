@@ -16,6 +16,28 @@ public class main {
 
 		num = ent.nextInt();
 		
+		primo(num);
+		
+	}
+	
+	public static void primo(int num) {
+		
+		boolean primo = true; 
+	    
+		for(int i = 2; i < num; i++) {
+	        if (num % i == 0) {
+	            primo = false;
+	            break;
+	        }
+	    }
+	    
+	    if (primo == true) {
+	    	System.out.println(num + " es primo");
+	    } else {
+	    	System.out.println(num + " no es primo");
+	    }
+	      
+		
 	}
 
 }
